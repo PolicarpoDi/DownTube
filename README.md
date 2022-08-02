@@ -1,52 +1,64 @@
-# **_Programa para download de vídeos no Youtube_**
-#### 
->Programa simples para realizar download de qualquer vídeo do Youtube 
-###
-### **Como usar**
-#### Crie uma venv pelo terminal:
+<div id="top"></div>
+
+# Programa para download de vídeos no Youtube
+
+Projeto com intuito de automatizar downloads de vídeos no Youtube.
+
+## 🚀 Começando
+
+Essas instruções permitirão que você obtenha uma cópia do projeto em operação na sua máquina local para fins de desenvolvimento e teste.
+
+Consulte **Implantação** para saber como implantar o projeto.
+
+### 📋 Pré-requisitos
+
+De que coisas você precisa para rodar o programa?
+
+```
+Python v3.7
+```
+```
+Visual Studio Code (opcional)
+```
+
+### ⚙️ Como rodar
+
+Uma série de exemplos passo-a-passo que informam o que você deve executar para ter um ambiente de desenvolvimento em execução.
+
+1. Crie uma venv pelo terminal:
 ```
 virtualenv venv
 ```
-#### Ative a venv:
+2. Ative a venv:
 ```
 source venv/bin/activate
 ```
-#### Instale o pytube:
+3. Instale o requirements.txt:
 ```
-pip install pytube
+pip install -r requirements.txt
 ```
-#### Rode o script
-~~~Python
-from pytube import YouTube
-from pytube.cli import on_progress
+4. No terminal, execute o comando dentro da pasta do projeto:
+```
+python app.py
+```
+![Tela do terminal com o download realizado](img/print-terminal-finalizado.png)
 
-resp = input('Deseja fazer o donwload de algum vídeo? ')
-while (resp == 's'):
-    # Para inserir o url de um vídeo do Toutube
-    link = input("Insira o link desejado: ")
+<p align="right">(<a href="#top">Voltar ao topo</a>)</p>
 
-    # Para mostrar o progresso do Download
-    yt = YouTube(link, on_progress_callback=on_progress)
+### Ajustes e melhorias
 
-    # Para mostrar o título do vídeo
-    print('Título = ', yt.title)
+O projeto ainda está em desenvolvimento e as próximas atualizações serão voltadas nas seguintes tarefas:
 
-    # Para mostrar que ja iniciou o download
-    print('Baixando...')
+- [x] Inserir barra de progresso
+- [ ] Selecionar diretório para o download
 
-    # Para baixar a maior resolução do vídeo que pretende baixar
-    ys = yt.streams.get_highest_resolution()
-    ys.download()
-    print(f'Download {yt.title} finalizado com sucesso!')
-    print('----------------------------')
-    print()
-    resp = input('Deseja continuar? ')
-else:
-    print('Finalizado')
-~~~
+## 🛠️ Construído com:
 
-##
-#### **Implementações futuras**
-* _Inserir barra de progresso_ - *FEITO*
-* _Selecionar diretório desejado_
-###
+![Python Version](https://img.shields.io/static/v1?label=Python&message=3.7&color=green?link=https://www.python.org/)
+![Pytube Version](https://img.shields.io/static/v1?label=Pytube&message=12.1.0&color=red?link=https://pytube.io/en/latest/)
+
+<p align="right">(<a href="#top">Voltar ao topo</a>)</p>
+
+## ✒️ Autores
+
+* **Desenvolvedor** - *Trabalho Inicial* - [Diego Policarpo](https://github.com/PolicarpoDi)
