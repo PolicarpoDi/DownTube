@@ -21,8 +21,6 @@ Python v3.7
 Visual Studio Code (opcional)
 ```
 
-<p align="right">(<a href="#top">Voltar ao topo</a>)</p>
-
 ### ⚙️ Como rodar
 
 Uma série de exemplos passo-a-passo que informam o que você deve executar para ter um ambiente de desenvolvimento em execução.
