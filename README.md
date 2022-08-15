@@ -52,7 +52,8 @@ python app.py
 O projeto ainda está em desenvolvimento e as próximas atualizações serão voltadas nas seguintes tarefas:
 
 - [x] Inserir barra de progresso
-- [ ] Selecionar diretório para o download
+- [x] Selecionar diretório para o download
+- [ ] Inserir criação de nova pasta para download caso desejar
 
 ## 🛠️ Construído com:
 
@@ -64,3 +65,4 @@ O projeto ainda está em desenvolvimento e as próximas atualizações serão vo
 ## ✒️ Autores
 
 * **Desenvolvedor** - *Trabalho Inicial* - [Diego Policarpo](https://github.com/PolicarpoDi)
+
